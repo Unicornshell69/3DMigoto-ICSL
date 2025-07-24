@@ -1,0 +1,56 @@
+{
+  "workbench.colorCustomizations" : {
+    "editor.background": "#161616"
+  },
+
+  // Skip bracket highlighting for the headers
+  "[ini]" : {
+    "editor.language.brackets": [["(",")"]]
+  },
+  "editor.tokenColorCustomizations": {
+      "textMateRules": [ 
+        ////// un-italic my theme
+        ////{
+        ////  "scope":"comment",
+        ////  "settings": {
+        ////    "fontStyle": ""
+        ////  }
+        ////},
+        // ini syntax coloring
+        {
+        "scope": "entity.name.section.group-title.ini",
+          "settings": {
+            "foreground": "#33A2A1",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope":"comment.line.semicolon.ini",
+          "settings": {
+            "foreground": "#307ada",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope":"keyword.other.definition.ini",
+          "settings": {
+            "foreground": "#bb54ff",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope":"string.quoted.double.ini",
+          "settings": {
+            "foreground":"#ff61e5"
+          }
+        },
+        {
+          "scope":"string.quoted.single.ini",
+          "settings": {
+            "foreground":"#ff61e5"
+          }
+        }
+
+    ]
+  }
+}
